@@ -1,0 +1,82 @@
+Simulacro Parcial I
+Andrés Jesús Ospino Stevenson
+1.	Planteamiento del problema
+
+SmartParking tiene dificultades manejando el control de los vehículos que entran y salen de sus parqueaderos. Actualmente lleva este control manualmente en libretas. A raíz de esto, no lleva un registro confiable de ingresos, pagos y disponibilidad de espacios, ocasionando quejas por parte de los clientes debido a la falta de esta información en tiempo real. Asimismo, enfrenta problemas de fraude.
+Este problema puede ser resuelto mediante la implementación de un sistema basado en bases de datos relacionales y no relacionales. Por una parte, una base de datos no relacional permitirá llevar en tiempo real la disponibilidad de puestos. Esta base será alimentada en tiempo real por sensores IoT que podrá resolver de una manera muy sencilla las quejas de los clientes.
+Por otra parte, una base de datos relacional permitirá llevar un control mucho más efectivo de todo lo que tiene que ver con facturación. Esto ayudará a combatir los problemas de fraude que enfrenta SmartParking.
+
+2.	Objetivos y alcance
+
+Objetivo general: implementar una base de datos relacional para administrar los clientes, vehículos, tarifas, facturación y control de ingresos/salidas de los parqueaderos de SmartParking y una base de datos no relacional para almacenar y consultar en tiempo real datos como sensores IoT de disponibilidad, cámaras de reconocimiento de placas y reseñas de clientes en la aplicación móvil.
+
+Objetivos específicos:
+•	Realizar levantamiento de información para identificar los datos a ser almacenados en las bases.
+•	
+
+Alcance:
+•	Registrar cliente.
+•	Registrar ingreso/salida de vehículo.
+•	Consultar disponibilidad de puestos.
+•	Consultar historial de cliente.
+•	Publicar una reseña.
+
+Alcance excluido o futuro:
+•	Obtener estadística de disponibilidad de puestos.
+•	Pagar el parqueadero desde la aplicación.
+
+3.	Requerimientos funcionales
+
+RQF001
+Nombre: Registrar cliente
+Descripción: Registrar el cliente en la base de datos relacional.
+Usuarios: operador
+
+RQF002
+Nombre: Registrar ingreso/salida de vehículo
+Descripción: Registrar si un vehículo entró o salió del parqueadero.
+Usuarios: operador
+
+RQF003
+Nombre: Consultar historial de cleinte
+Descripción: Revisar el historial de pago y la cantidad de veces que ha ido un cliente al parqueadero.
+Usuarios: administrador
+
+RQF001-RQF003 pertenecen a la base relacional. Estas funciones son propias de esta base de datos de acuerdo a la necesidad de SmartParking. Involucran facturación, administración de clientes y control de ingresos/salidas.
+
+RQF004
+Nombre: Consultar disponibilidad de puesto
+Descripción: Consultar cuáles son los puestos que se encuentran disponibles en el parqueadero.
+Usuarios: operador
+
+RQF005
+Nombre: Publicar una reseña
+Descripción: Hacer una reseña de la experiencia vivida en el parqueadero.
+Usuarios: cliente
+
+RQF004-RQF005 pertenecen a la base no relacional. Estas funcionalidades involucran la consulta de disponibilidad de puestos (posible gracias a los sensores IoT) y a la reseña en una aplicación móvil del cliente.
+
+4.  Requerimientos no funcionales
+
+RQNF001
+Nombre: Instalar sensores IoT
+Descripción: Instalar los sensores IoT en los parqueaderos.
+
+Este primer RQNF es exclusivamente para la base no relacional, que es la que involucra sensores.
+
+RQNF002
+Nombre: Contar con vigilancia
+Descripción: Contar con vigilancia para garantizar la integridad de los sensores.
+
+RQNF003
+Nombre: Tener internet
+Descripción: Tener internet para poder conectarse a las bases de datos.
+
+Éstos últimos dos RQNF sirven para ambas bases, en tanto abarca necesidades globales para una solución basada en software.
+
+5.  Historias de usuario - Clientes
+6.  Historias de usuario - Administrador/Operador
+7.  Stakeholders
+8.  Conflictos entre stakeholders
+9.  Flujo de solución
+10. Análisis crítico
