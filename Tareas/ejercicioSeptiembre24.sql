@@ -202,6 +202,9 @@ SELECT * FROM Vacuna WHERE idVac BETWEEN 2 AND 5;
 # Me consulta los productos que comienzan por "Comida"
 SELECT * FROM Producto WHERE nombreProd LIKE 'Comida%';
 # Me consulta los productos que terminan por "pulgas"
-SELECT * FROM Mascota WHERE nombreMascota LIKE '%pulgas';
+SELECT * FROM Producto WHERE nombreProd LIKE '%pulgas';
+# % funciona también para números. Me consulta los documentos
+# que tienen 84 en el centro
+select * from Mascota where documentoCliente LIKE '%84%';
 
 #DROP DATABASE bdmascotas;
