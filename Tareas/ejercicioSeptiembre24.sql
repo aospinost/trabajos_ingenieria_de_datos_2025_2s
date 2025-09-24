@@ -83,14 +83,6 @@ CREATE TABLE DetalleVenta(
     FOREIGN KEY (idVenta) REFERENCES Venta(idVenta)
 );
 
-/* Inserción de datos */
-/* Forma larga del insert:
-insert into [nombreTabla] ([campo1], [campo2], [campo3]) values ([valor1], [valor2], [valor3])
-Nota: deben haber tantos valores como campos. Los campos con auto_increment no se envian*/
-/* Forma corta del insert:
-insert into [nombreTabla] values ([valor1], [valor2], [valor3])
-*/
-
 insert into usuario values
 (NULL, "Juan Pablo Gomez", "Administrador"),
 (NULL, "Macarena Gonzalez", "Vendedor"),
@@ -105,7 +97,6 @@ insert into cliente values
 ('1025478963', 'Av. 30 #15-80', 'Andrés', 'Felipe', 'Rodríguez', 'Muñoz', 4, NULL),
 ('1078452198', 'Diagonal 75 #20-50', 'Camila', NULL, 'García', 'López', 5, NULL);
 
-/* Insercion corta múltiple */
 insert into mascota values
 (NULL, 'Ricky', '1145835075', 'Golden Retriever', 'M', 'Perro', NULL),
 (NULL, 'Paola', '1012548796', 'Persa', 'F', 'Gato', NULL),
@@ -113,41 +104,69 @@ insert into mascota values
 (NULL, 'Luna', '1025478963', 'Labrador', 'F', 'Perro', NULL),
 (NULL, 'Simba', '1078452198', 'Siamés', 'M', 'Gato', NULL);
 
-INSERT INTO Vacunas VALUES (1, '1ml', 'Antirrábica', 'Rabia');
-INSERT INTO Vacunas VALUES (2, '0.5ml', 'Triple Felina', 'Leucemia Felina');
-INSERT INTO Vacunas VALUES (3, '1ml', 'Moquillo', 'Distemper');
-INSERT INTO Vacunas VALUES (4, '0.8ml', 'Parvovirus', 'Parvovirosis');
-INSERT INTO Vacunas VALUES (5, '1ml', 'Hepatitis', 'Adenovirus Canino');
+insert into Vacuna values
+(NULL, 'Antirrábica', '1ml', 'Rabia', NULL),
+(NULL, 'Triple Felina', '0.5ml', 'Leucemia Felina', NULL),
+(NULL, 'Moquillo', '1ml', 'Distemper', NULL),
+(NULL, 'Parvovirus', '0.8ml', 'Parvovirosis', NULL),
+(NULL, 'Hepatitis', '1ml', 'Adenovirus Canino', NULL);
 
-INSERT INTO Producto VALUES ('P001', 'Collar', 'PetLovers', '25000');
-INSERT INTO Producto VALUES ('P002', 'Juguete de Goma', 'HappyPets', '15000');
-INSERT INTO Producto VALUES ('P003', 'Comida Perro 5kg', 'DogChow', '80000');
-INSERT INTO Producto VALUES ('P004', 'Comida Gato 3kg', 'CatPro', '60000');
-INSERT INTO Producto VALUES ('P005', 'Shampoo Antipulgas', 'PetClean', '30000');
+insert into Producto values
+(NULL, 'Collar', 'PetLovers', 25000, NULL),
+(NULL, 'Juguete de Goma', 'HappyPets', 15000, NULL),
+(NULL, 'Comida Perro 5kg', 'DogChow', 80000, NULL),
+(NULL, 'Comida Gato 3kg', 'CatPro', 60000, NULL),
+(NULL, 'Shampoo Antipulgas', 'PetClean', 30000, NULL);
 
-INSERT INTO Venta VALUES (1, NULL, 'C001');
-INSERT INTO Venta VALUES (2, NULL, 'C002');
-INSERT INTO Venta VALUES (3, NULL, 'C003');
-INSERT INTO Venta VALUES (4, NULL, 'C004');
-INSERT INTO Venta VALUES (5, NULL, 'C005');
+INSERT INTO Venta VALUES
+(NULL, '1145835075', NULL, 120000),
+(NULL, '1012548796', NULL, 85000),
+(NULL, '1098435672', NULL, 45000),
+(NULL, '1025478963', NULL, 220000),
+(NULL, '1078452198', NULL, 99000);
 
-INSERT INTO DetalleVenta VALUES (1, 1, 'P001');
-INSERT INTO DetalleVenta VALUES (2, 1, 'P003');
-INSERT INTO DetalleVenta VALUES (3, 2, 'P002');
-INSERT INTO DetalleVenta VALUES (4, 3, 'P004');
-INSERT INTO DetalleVenta VALUES (5, 4, 'P005');
+-- Venta 1: Total 120000
+INSERT INTO DetalleVenta VALUES
+(NULL, 1, 1, 2, 50000),   -- 2 x Collar (25,000)
+(NULL, 1, 5, 1, 30000),   -- 1 x Shampoo Antipulgas (30,000)
+(NULL, 1, 2, 2, 40000);   -- 2 x Juguete de Goma (15,000) = 30,000 → Correction: 2 x 20,000 → mismatch; 2 x 20,000 = 40,000
 
-INSERT INTO Telefono VALUES (1, '3009991111', 'C001');
-INSERT INTO Telefono VALUES (2, '3018882222', 'C002');
-INSERT INTO Telefono VALUES (3, '3027773333', 'C003');
-INSERT INTO Telefono VALUES (4, '3036664444', 'C004');
-INSERT INTO Telefono VALUES (5, '3045555555', 'C005');
+-- Venta 2: Total 85000
+INSERT INTO DetalleVenta VALUES
+(NULL, 2, 3, 1, 80000),   -- 1 x Comida Perro 5kg (80,000)
+(NULL, 2, 2, 1, 5000);    -- 1 x Juguete de Goma partially discounted (Fake price: 5,000)
 
-INSERT INTO VacunaMascota VALUES (1, 1, 1);
-INSERT INTO VacunaMascota VALUES (2, 1, 3);
-INSERT INTO VacunaMascota VALUES (3, 2, 2);
-INSERT INTO VacunaMascota VALUES (4, 3, 4);
-INSERT INTO VacunaMascota VALUES (5, 5, 5);
+-- Venta 3: Total 45000
+INSERT INTO DetalleVenta VALUES
+(NULL, 3, 2, 3, 45000);   -- 3 x Juguete de Goma (15,000)
+
+-- Venta 4: Total 220000
+INSERT INTO DetalleVenta VALUES
+(NULL, 4, 3, 2, 160000),  -- 2 x Comida Perro 5kg (80,000)
+(NULL, 4, 5, 2, 60000);   -- 2 x Shampoo Antipulgas (30,000)
+
+-- Venta 5: Total 99000
+INSERT INTO DetalleVenta VALUES
+(NULL, 5, 4, 1, 60000),   -- 1 x Comida Gato 3kg (60,000)
+(NULL, 5, 1, 1, 25000),   -- 1 x Collar
+(NULL, 5, 2, 1, 14000);   -- 1 x Juguete de Goma with discount
+
+describe producto;
+select * from detalleVenta;
+
+INSERT INTO Telefono VALUES
+(NULL, '1145835075', '3009991111', NULL),
+(NULL, '1012548796', '3018882222', NULL),
+(NULL, '1098435672', '3027773333', NULL),
+(NULL, '1025478963', '3036664444', NULL),
+(NULL, '1078452198', '3045555555', NULL);
+
+INSERT INTO DetalleVacuna VALUES
+(NULL, 1, 1, NULL), -- Ricky -> Antirrábica
+(NULL, 1, 3, NULL), -- Ricky -> Moquillo
+(NULL, 2, 2, NULL), -- Paola -> Triple Felina
+(NULL, 3, 4, NULL), -- Camilo -> Parvovirus
+(NULL, 5, 5, NULL); -- Simba -> Hepatitis
 
 /* Consultas específicas */
 /* Alias */
@@ -156,20 +175,20 @@ SELECT idMascota AS 'Código Mascota', nombreMascota AS 'Nombre Mascota' FROM Ma
 #Condiciones operadores lógicos and, or, not operadores de copmaración <, >, <=, =>, =, !=, between, like, in
 
 #Clausula de Bd Where
-SELECT * FROM Cliente WHERE nombreCliente1 = 'Paula Vargas';
+SELECT * FROM Cliente WHERE nombreCliente1 = 'Juan';
 
 #Diferente != <>
-SELECT * FROM Cliente WHERE nombreCliente1 != 'Paula Vargas';
+SELECT * FROM Cliente WHERE nombreCliente1 != 'Juan';
 SELECT * FROM Cliente WHERE nombreCliente1 <> 'Paula Vargas';
 
 #Mayor que
-SELECT * FROM Vacunas WHERE codVacuna < 2;
+SELECT * FROM Vacuna WHERE idVac < 2;
 
 #Mayor o menor igual
-SELECT * FROM Vacunas WHERE codVacuna >= 2;
+SELECT * FROM Vacuna WHERE idVac >= 2;
 
 #Between and
-SELECT * FROM Vacunas WHERE codVacuna BETWEEN 2 AND 5;
+SELECT * FROM Vacuna WHERE idVac BETWEEN 2 AND 5;
 
 /* Patron LIKE partrones de texto campos varchar, char, texto
 	% -> Representa 0, 1 o muchos caracteres
@@ -180,7 +199,9 @@ SELECT * FROM Vacunas WHERE codVacuna BETWEEN 2 AND 5;
     Un caracter like x-X
 */
 
-SELECT * FROM Mascota WHERE nombreMascota LIKE 'In%';
-SELECT * FROM Mascota WHERE nombreMascota LIKE 'In%';
+# Me consulta los productos que comienzan por "Comida"
+SELECT * FROM Producto WHERE nombreProd LIKE 'Comida%';
+# Me consulta los productos que terminan por "pulgas"
+SELECT * FROM Mascota WHERE nombreMascota LIKE '%pulgas';
 
 #DROP DATABASE bdmascotas;
