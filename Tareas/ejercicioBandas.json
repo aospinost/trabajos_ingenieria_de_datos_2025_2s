@@ -1,7 +1,7 @@
 use disquera
 
 //Reto 1: crear la colección bands e insertar 3 registros
-db.createCollection("bandas")
+db.createCollection("bands")
 db.bands.insertMany([
 	{name: "Los Ritmos del Mar", country: "México", albums: [
 		{title: "Vibras del Caribe", year: 2023, rating: 4.8, sales: 20000},
