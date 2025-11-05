@@ -1,0 +1,56 @@
+use disquera
+
+//Reto 1: crear la colección bands e insertar 3 registros
+db.createCollection("bandas")
+db.bands.insertMany([
+	{name: "Los Ritmos del Mar", country: "México", albums: [
+		{title: "Vibras del Caribe", year: 2023, rating: 4.8, sales: 20000},
+		{title: "Amanecer Tropical", year: 2024, rating: 4.9, sales: 22000}],
+  	members: ["Carlos", "Ana", "Javier"]},
+	{name: "La Orquesta del Sol", country: "Argentina", albums: [
+		{title: "Bailando en el Sol", year: 2022, rating: 4.5, sales: 18000},
+		{title: "Sonidos del Mundo", year: 2023, rating: 4.7, sales: 21000}],
+  	members: ["Luis", "María", "Roberto", "Verónica"]},
+	{name: "Cumbia y Sabor", country: "Perú", albums: [
+		{title: "Cumbia de la Tierra", year: 2023, rating: 3.5, sales: 5000},
+		{title: "Sabor a Perú", year: 2024, rating: 3.2, sales: 7000},
+		{title: "Lama Saltante", year: 2025, rating: 3.8, sales: 8000}],
+  	members: ["Juan", "Pedro", "Sofía", "Lucía"]}
+])
+
+//Reto 2: contar cuantos albums tiene cada banda
+db.bands.aggregate([
+	{$unwind: "$albums"},
+	{$group:
+		{
+		_id: "$name",
+		albumCount: {$sum: 1},
+		totalSales: {$sum: "$album.sales"}
+		}
+	},
+		{$sort: {albumCount: -1}}
+])
+
+//Reto 3: Top 2 de los albums más vendidos
+db.bands.aggregate([
+	{$unwind: "$albums"},
+	{
+		$project: {
+			albums: 1,
+		}
+	},
+		{$sort: {"albums.sales": -1}},
+		{$limit: 2}
+])
+
+//Reto 4: obtener el rating por país
+db.bands.aggregate([
+	{$unwind: "$albums"},
+	{$group:
+		{
+		_id: "$country",
+		averageRating: {$avg: "$albums.rating"},
+		}
+	},
+		{$sort: {averageRating: -1}}
+])
