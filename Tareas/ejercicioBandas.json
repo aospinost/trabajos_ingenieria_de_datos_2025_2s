@@ -25,7 +25,7 @@ db.bands.aggregate([
 		{
 		_id: "$name",
 		albumCount: {$sum: 1},
-		totalSales: {$sum: "$album.sales"}
+		totalSales: {$sum: "$albums.sales"}
 		}
 	},
 		{$sort: {albumCount: -1}}
