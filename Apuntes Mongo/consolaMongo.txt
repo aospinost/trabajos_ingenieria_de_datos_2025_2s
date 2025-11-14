@@ -1,0 +1,539 @@
+PS C:\Users\prestamour\Downloads\ingDatos> git clone https://github.com/Tlcabrera/ingenieriadatosexpress
+Cloning into 'ingenieriadatosexpress'...
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 39 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (39/39), 23.37 KiB | 398.00 KiB/s, done.
+Resolving deltas: 100% (8/8), done.
+PS C:\Users\prestamour\Downloads\ingDatos> cd ingenieriadatosexpress
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm install
+npm warn ancient lockfile
+npm warn ancient lockfile The package-lock.json file was created with an old version of npm,
+npm warn ancient lockfile so supplemental metadata must be fetched from the registry.
+npm warn ancient lockfile
+npm warn ancient lockfile This is a one-time fix-up, please be patient...
+npm warn ancient lockfile
+
+added 7 packages, and audited 8 packages in 2s
+
+4 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.6.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+npm notice To update run: npm install -g npm@11.6.2
+npm notice
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm install -g npm@11.6.2
+
+added 1 package in 4s
+
+28 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm install
+
+added 114 packages, and audited 122 packages in 9s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> net set MongoDB
+La sintaxis de este comando es:
+
+NET
+    [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+      HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+      STATISTICS | STOP | TIME | USE | USER | VIEW ]
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000
+🌍 Entorno: development
+🔗 URL: http://localhost:3000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Error AL CONECTAR LA bd: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[nodemon] app crashed - waiting for file changes before starting...
+kill
+cancel
+stop
+¿Desea terminar el trabajo por lotes (S/N)? 
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000
+🌍 Entorno: development
+🔗 URL: http://localhost:3000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Error AL CONECTAR LA bd: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[nodemon] app crashed - waiting for file changes before starting...
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000
+🌍 Entorno: development
+🔗 URL: http://localhost:3000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Error AL CONECTAR LA bd: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[nodemon] app crashed - waiting for file changes before starting...
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000
+🌍 Entorno: development
+🔗 URL: http://localhost:3000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Error AL CONECTAR LA bd: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[nodemon] app crashed - waiting for file changes before starting...
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+MongoDB disconnected
+MongoDB disconnected through app termination
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  override existing env vars with { override: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+GET / - 2025-11-14T13:37:38.796Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3000;
+🌍 Entorno: development
+🔗 URL: http://localhost:3000;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+GET /tareas - 2025-11-14T13:39:59.075Z
+GET /api/tareas - 2025-11-14T13:40:11.655Z
+POST /api/tareas - 2025-11-14T13:41:28.211Z
+MongoDB disconnected
+MongoDB disconnected through app termination
+¿Desea terminar el trabajo por lotes (S/N)? S
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+GET /api/tareas - 2025-11-14T13:43:06.448Z
+POST /api/tareas - 2025-11-14T13:43:19.285Z
+POST /api/tareas - 2025-11-14T13:44:12.603Z
+GET / - 2025-11-14T13:54:04.050Z
+GET /api/tareas/:id - 2025-11-14T14:06:13.763Z
+GET /api/tareas/:id - 2025-11-14T14:07:15.477Z
+GET /api/tareas/:id6917322c697600069c983063 - 2025-11-14T14:07:22.868Z
+GET /api/tareas/:6917322c697600069c983063 - 2025-11-14T14:07:29.012Z
+GET /api/tareas/:%226917322c697600069c983063%22 - 2025-11-14T14:07:46.428Z
+GET /api/tareas/:6917322c697600069c983063 - 2025-11-14T14:07:52.899Z
+GET /api/tareas/:'6917322c697600069c983063' - 2025-11-14T14:08:13.300Z
+GET /api/tareas/:ObjectId('6917322c697600069c983063') - 2025-11-14T14:09:11.236Z
+GET /api/tareas/:'6917322c697600069c983063' - 2025-11-14T14:09:18.002Z
+GET /api/tareas/:6917322c697600069c983063 - 2025-11-14T14:09:22.379Z
+GET /api/tareas/%226917322c697600069c983063%22 - 2025-11-14T14:10:12.235Z
+GET /api/tareas/'6917322c697600069c983063' - 2025-11-14T14:10:18.223Z
+GET /api/tareas/:'6917322c697600069c983063' - 2025-11-14T14:10:26.637Z
+GET /api/tareas/:6917322c697600069c983063 - 2025-11-14T14:10:42.084Z
+GET /api/tareas/:6917322c697600069c983063 - 2025-11-14T14:11:29.919Z
+GET /api/tareas/6917322c697600069c983063 - 2025-11-14T14:11:42.689Z
+GET /api/tareas/6917322c697600069c983063 - 2025-11-14T14:21:04.301Z
+PUT /api/tareas/6917322c697600069c983063 - 2025-11-14T14:21:27.694Z
+DELETE /api/tareas/6917322c697600069c983063 - 2025-11-14T14:29:22.474Z
+POST /api/tareas/6917322c697600069c983063 - 2025-11-14T14:38:29.280Z
+POST /api/tareas - 2025-11-14T14:38:37.296Z
+PATCH /api/tareas/69173eed697600069c983069/completar - 2025-11-14T14:42:17.871Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  override existing env vars with { override: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69173eed697600069c983069/completar - 2025-11-14T14:52:00.399Z
+GET / - 2025-11-14T14:54:18.766Z
+GET /favicon.ico - 2025-11-14T14:54:18.831Z
+GET / - 2025-11-14T14:54:20.863Z
+GET /favicon.ico - 2025-11-14T14:54:20.894Z
+GET / - 2025-11-14T14:54:23.005Z
+GET /favicon.ico - 2025-11-14T14:54:23.031Z
+MongoDB disconnected
+MongoDB disconnected through app termination
+¿Desea terminar el trabajo por lotes (S/N)?
+PS C:\Users\prestamour\Downloads\ingDatos\ingenieriadatosexpress> npm run dev
+
+> express2@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+GET / - 2025-11-14T14:54:45.988Z
+GET /favicon.ico - 2025-11-14T14:54:46.062Z
+GET / - 2025-11-14T14:54:48.911Z
+DELETE /api/tareas/69173eed697600069c983069 - 2025-11-14T15:40:59.093Z
+POST /api/tareas - 2025-11-14T15:41:09.070Z
+GET /api/tareas/69173eed697600069c983069 - 2025-11-14T15:41:39.170Z
+GET /api/tareas/69174d95e040954a09562584 - 2025-11-14T15:41:50.753Z
+PATCH /api/tareas/69174d95e040954a09562584/completar - 2025-11-14T15:42:02.611Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69174d95e040954a09562584/completar - 2025-11-14T15:45:52.583Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69174d95e040954a09562584/completar - 2025-11-14T15:48:04.839Z
+DELETE /api/tareas/69174d95e040954a09562584 - 2025-11-14T15:50:33.369Z
+GET /api/tareas - 2025-11-14T15:51:18.519Z
+POST /api/tareas - 2025-11-14T15:51:26.230Z
+PATCH /api/tareas/69174ffe56e510342cb9d17b/completar - 2025-11-14T15:51:57.151Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69174ffe56e510342cb9d17b/completar - 2025-11-14T15:55:44.310Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+DELETE /api/tareas/69174ffe56e510342cb9d17b - 2025-11-14T15:56:38.465Z
+POST /api/tareas/ - 2025-11-14T15:56:53.049Z
+GET /api/tareas/691751453f2bc1b0a7e47e44 - 2025-11-14T15:57:00.790Z
+DELETE /api/tareas/691751453f2bc1b0a7e47e44 - 2025-11-14T15:57:25.130Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+POST /api/tareas/ - 2025-11-14T15:58:12.577Z
+POST /api/tareas/69175194dfdcf3f18103315e/completar - 2025-11-14T15:59:56.330Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69175194dfdcf3f18103315e/completar - 2025-11-14T16:00:48.045Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: ⚙️  override existing env vars with { override: true }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69175194dfdcf3f18103315e/completar - 2025-11-14T16:01:16.063Z
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SERVIDOR EXPRESS INICIADO
+📡 Puerto: 3005;
+🌍 Entorno: development
+🔗 URL: http://localhost:3005;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MongoDB Connected: localhost
+PATCH /api/tareas/69175194dfdcf3f18103315e/reabrir - 2025-11-14T16:05:12.902Z
